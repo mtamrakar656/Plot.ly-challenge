@@ -96,6 +96,7 @@ function optionChanged(selectedID){
  // Remove Sample value and otuID from individual
  var sampleValue1 =idSample[0].sample_values;
  var otuID1= idSample[0].otu_ids;
+
  
  // Define the layout and trace object, edit color and orientation
  const trace1 = {
@@ -104,7 +105,6 @@ function optionChanged(selectedID){
     mode: 'markers',
     marker: {
       color: otuID1,
-      
       size: sampleValue1
     }
   },
@@ -115,7 +115,7 @@ function optionChanged(selectedID){
     yaxis: {title: 'Number of Samples Collected'},
     showlegend: false,
     height: 800,
-    width: 1800
+    width: 1400
     };
     
  // Plot using Plotly
